@@ -1,0 +1,17 @@
+version: '3'
+services:
+  mqttbroker:
+    container_name: mqttbroker
+    image: eclipse-mosquitto
+    restart: always
+    ports:
+      - 1883:1883
+      - 9001:9001
+    volumes:
+      - ${CONFIG}/mosquitto/config:/mosquitto/config
+      #- ${CONFIG}/mosquitto/data:/mosquitto/data
+      #- ${CONFIG}/mosquitto/log:/mosquitto/log
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}

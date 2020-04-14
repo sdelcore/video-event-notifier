@@ -1,0 +1,27 @@
+MQTT:
+  url: 10.0.0.5
+  port: 1883
+  ws port: 9001
+  Topics:
+    update: update
+    now playing: now_playing
+    events: events/
+    movies: movies
+Host: 
+  database: test.db
+  update frequency: 15
+  time offset: 0
+PleX:
+  server: SERVER
+  username: USERNAME
+  password: PASSWORD
+  update frequency: 15
+Chromecast:
+  name: TV
+  update frequency: 15
+
+#[FOLDERS]
+#srt=assets/subtitles
+#rules=assets/rules
+
+

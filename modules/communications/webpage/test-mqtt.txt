@@ -1,0 +1,4 @@
+mosquitto_pub -h localhost -p 1883 -t "update" -m "{\"video\":\"test movie\",\"current_time\": 10,\"events\": 5}"
+
+
+mosquitto_pub -h localhost -p 1883 -t "now_playing" -m "{\"video\":{\"title\":\"test movie\"},\"current_time\": 10}"

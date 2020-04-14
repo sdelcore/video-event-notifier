@@ -1,0 +1,4 @@
+pychromecast>=3.2.2
+paho-mqtt>=1.4.0
+websocket-client
+pyyaml

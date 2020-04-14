@@ -1,0 +1,8 @@
+#Folders
+build
+__pycache__
+.vscode
+#Files
+config.*
+!*.template
+
